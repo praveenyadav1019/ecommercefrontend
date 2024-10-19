@@ -19,4 +19,7 @@ const nextConfigWithPwa = withPWA({
 }) (
     nextConfig
 );
-module.exports = pwa==='1'?nextConfigWithPwa:nextConfig ;
+module.exports = {
+  basePath: '/store',
+};
+
